@@ -1,0 +1,31 @@
+.social-list {
+  justify-content: center;
+  align-items: center;
+  & li {
+    border-radius: 50%;
+    & li:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.social-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  fill: #afb1b8;
+  background-color: transparent;
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--body-background-color);
+  }
+}

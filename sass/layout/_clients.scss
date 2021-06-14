@@ -1,0 +1,35 @@
+/*========clients================*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-logo {
+  display: block;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  fill: #afb1b8;
+
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+
+/*========end clients=============*/

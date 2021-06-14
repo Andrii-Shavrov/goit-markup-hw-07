@@ -1,0 +1,41 @@
+/*===== smooth scrolling header&footer ====*/
+html {
+  scroll-behavior: smooth;
+}
+/*=====end smooth scrolling header&footer ====*/
+
+/*============ basic reset ============= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/*============end basic reset ======== */

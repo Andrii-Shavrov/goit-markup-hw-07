@@ -1,0 +1,127 @@
+/*====== section hero portfolio ==========*/
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.project-item-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.project-animation {
+  /* === overlay ===*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+
+  transition-property: transform;
+  transform: translateY(100%);
+  transition: var(--animation);
+
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--body-background-color);
+  .project-foto:hover &,
+  .project-foto:focus & {
+    transform: translateY(0%);
+  }
+}
+
+.project {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.project-item {
+  display: block;
+  width: calc((100% - 90px) / 3);
+  margin-top: 30px;
+  margin-left: 30px;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.project-heading-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+.project-heading {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color-black);
+  margin-bottom: 4px;
+}
+.project-description {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.filter-options {
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-bottom: 50px;
+}
+.filter-item-options {
+  margin-top: 8px;
+  margin-left: 8px;
+  color: var(--logo-color);
+}
+.filter-item {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+  color: var(--main-color-black);
+  background-color: var(--background-color);
+
+  display: inline-block;
+  border: transparent;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 22px;
+  padding-right: 22px;
+  cursor: pointer;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+    color: var(--background-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/*==========end section hero portfolio======*/

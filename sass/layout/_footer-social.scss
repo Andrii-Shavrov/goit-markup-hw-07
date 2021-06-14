@@ -1,0 +1,21 @@
+/*=====footer social container=====*/
+.footer-social {
+  margin-left: 73px;
+  fill: var(--body-background-color);
+}
+.footer-social h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--body-background-color);
+
+  margin-bottom: 20px;
+}
+.footer-social .footer-social-item {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*=====end footer social container=====*/
