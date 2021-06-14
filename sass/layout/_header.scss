@@ -11,7 +11,7 @@
 .header-shadow {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.logo-link {
+.logo {
   font-family: 'Raleway', sans-serif;
 
   @include font(26px, 700, 31px);
@@ -34,7 +34,7 @@
   color: var(--logo-color);
 }
 
-.navigation {
+.header__nav {
   @extend %vertical-align;
   cursor: pointer;
 }
@@ -82,14 +82,14 @@
   }
 }
 
-.header-contact {
+.header__contact {
   margin-left: auto;
   align-items: center;
 }
 .header-contact-item + .header-contact-item {
   margin-left: 50px;
 }
-.header-contact-link {
+.header-contact__link {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
