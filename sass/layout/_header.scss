@@ -13,9 +13,9 @@
 }
 .logo-link {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+
+  @include font(26px, 700, 31px);
+
   letter-spacing: 0.03em;
   color: var(--accent-color);
   margin-right: 70px;
@@ -27,24 +27,22 @@
 }
 .logo-web {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+
+  @include font(26px, 700, 31px);
+
   letter-spacing: 0.03em;
   color: var(--logo-color);
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
+  @extend %vertical-align;
   cursor: pointer;
 }
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
 .menu {
-  display: flex;
-  align-items: center;
+  @extend %vertical-align;
 }
 .current {
   position: relative;
@@ -68,9 +66,9 @@
   padding-bottom: 32px;
   display: block;
   font-family: inherit;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.15;
+
+  @include font(14px, 500, 16px);
+
   letter-spacing: 0.02em;
   color: var(--logo-color);
 
@@ -97,9 +95,9 @@
   padding-bottom: 32px;
 
   font-family: inherit;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.15;
+
+  @include font(14px, 500, 16px);
+
   letter-spacing: 0.02em;
 
   color: var(--text-color);

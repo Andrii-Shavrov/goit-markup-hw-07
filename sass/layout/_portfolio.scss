@@ -66,9 +66,9 @@
 }
 .project-heading {
   font-family: inherit;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+
+  @include font(18px, 700, 36px);
+
   letter-spacing: 0.06em;
   color: var(--main-color-black);
   margin-bottom: 4px;
@@ -94,12 +94,11 @@
 }
 .filter-item {
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+
+  @include font(16px, 500, 26px);
+
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--logo-color);
   color: var(--main-color-black);
   background-color: var(--background-color);
 

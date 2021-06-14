@@ -22,9 +22,9 @@
 }
 .team-title {
   font-family: inherit;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+
+  @include font(36px, 700, 42px);
+
   letter-spacing: 0.03em;
   color: var(--main-color-black);
 }
@@ -34,9 +34,9 @@
 }
 .team-list-item-name {
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+
+  @include font(16px, 500, 19px);
+
   letter-spacing: 0.03em;
   color: var(--main-color-black);
   margin-bottom: 10px;
@@ -46,9 +46,9 @@
 }
 .team-list-item-position {
   font-family: inherit;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
+
+  @include font(16px, 400, 19px);
+
   letter-spacing: 0.03em;
   color: var(--text-color);
   display: block;
@@ -67,9 +67,8 @@
 }
 
 .link-social {
-  display: flex;
+  @extend %vertical-align;
   justify-content: center;
-  align-items: center;
   border-radius: 50%;
   width: 44px;
   height: 44px;

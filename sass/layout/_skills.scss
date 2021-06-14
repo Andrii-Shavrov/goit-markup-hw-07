@@ -15,9 +15,9 @@
   margin-right: 30px;
 }
 .skills-list-item-bg {
-  display: flex;
+  @extend %vertical-align;
+
   height: 120px;
-  align-items: center;
   justify-content: center;
   border-radius: 4px;
   background-color: var(--background-color);
