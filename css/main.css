@@ -153,19 +153,6 @@ body {
   fill: var(--body-background-color);
 }
 
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-color-black);
-}
-
-.section-title-indent-h {
-  margin-bottom: 50px;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -762,6 +749,19 @@ body {
   text-align: center;
 }
 
+.pictures-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color-black);
+}
+
+.pictures-title-indent-h {
+  margin-bottom: 50px;
+}
+
 .pictures-list {
   flex-basis: calc((100% - 90px) / 3);
   display: flex;
@@ -809,12 +809,26 @@ body {
   padding-bottom: 94px;
 }
 
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color-black);
+  margin-bottom: 50px;
+}
+
 .clients-logo {
   display: block;
 }
 
 .clients-logo:not(:last-child) {
   margin-right: 30px;
+}
+
+.clients-title-indent-h {
+  margin-bottom: 50px;
 }
 
 .clients-logo {
@@ -1012,6 +1026,13 @@ body {
 
 /* ===============end footer-subscribe =========== */
 /*=========team================*/
+.team {
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--background-color);
+}
+
 .team-list {
   flex-wrap: wrap;
   align-items: flex-start;
@@ -1035,6 +1056,10 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-color-black);
+}
+
+.team-title {
+  margin-bottom: 50px;
 }
 
 .team-list-item-name {

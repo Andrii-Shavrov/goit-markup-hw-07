@@ -6,6 +6,7 @@
   align-items: center;
   user-select: none;
 }
+/* создание в <label> псевдоэлемента ::before со следующими стилями */
 .custom-checkbox + label::before {
   content: '';
   display: inline-block;
@@ -24,20 +25,20 @@
   transition-property: border-color, background-image, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* стили для custom-checkbox: находящегося в :focus и не находящегося в состоянии :checked */
-  &:focus:not(:checked) + label::before {
-    border-color: var(--accent-color);
-  }
-  /* стили для custom-checkbox: находящегося в состоянии :checked */
-  &:checked + label::before {
-    border-color: #0b76ef;
-    background-color: #0b76ef;
-    background-image: url('../images/vector.svg');
-    background-size: contain;
-  }
-  /* стили для custom-checkbox: находящегося в состоянии "disabled" */
-  .custom-checkbox:disabled + &::before {
-    background-color: #e9ecef;
-  }
+}
+/* стили для custom-checkbox: находящегося в :focus и не находящегося в состоянии :checked */
+.custom-checkbox:focus:not(:checked) + label::before {
+  border-color: var(--accent-color);
+}
+/* стили для custom-checkbox: находящегося в состоянии :checked */
+.custom-checkbox:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url('../images/vector.svg');
+  background-size: contain;
+}
+/* стили для custom-checkbox: находящегося в состоянии "disabled" */
+.custom-checkbox:disabled + label::before {
+  background-color: #e9ecef;
 }
 /* ========== end-custom-checkbox =============*/

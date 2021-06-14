@@ -3,11 +3,23 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color-black);
+  margin-bottom: 50px;
+}
 .clients-logo {
   display: block;
   &:not(:last-child) {
     margin-right: 30px;
   }
+}
+.clients-title-indent-h {
+  margin-bottom: 50px;
 }
 
 .clients-logo {
