@@ -1,20 +1,26 @@
 /*=======skills company========*/
-.skills {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-bottom: 0;
+
+.skills__item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__title {
+    font-family: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--main-color-black);
+  }
+  &__text {
+    margin-top: 10px;
+    font-family: inherit;
+    line-height: 1.71;
+    margin-top: 10px;
+    color: var(--text-color);
+  }
 }
 
-.skills-list {
-  display: flex;
-}
-.skills-list-item {
-  width: 270px;
-}
-.skills-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-.skills-list-item-bg {
+.skills__background {
   @extend %vertical-align;
 
   height: 120px;
@@ -23,17 +29,5 @@
   background-color: var(--background-color);
   margin-bottom: 30px;
 }
-.skills-list-title {
-  font-family: inherit;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--main-color-black);
-}
-.skills-list-text {
-  margin-top: 10px;
-  font-family: inherit;
-  line-height: 1.71;
-  margin-top: 10px;
-  color: var(--text-color);
-}
+
 /*=====end skills company======*/

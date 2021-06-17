@@ -11,18 +11,18 @@
   padding-bottom: 200px;
   margin: 0 auto;
   text-align: center;
-}
-.hero-title {
-  @include font(44px, 900, 60px);
+  &__title {
+    @include font(44px, 900, 60px);
 
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--body-background-color);
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--body-background-color);
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
 }
 
 /*==========end section hero=============*/

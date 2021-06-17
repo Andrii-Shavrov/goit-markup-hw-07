@@ -2,7 +2,17 @@
 .footer-social {
   margin-left: 73px;
   fill: var(--body-background-color);
-  & .footer-social-item {
+  &__list {
+    justify-content: center;
+    align-items: center;
+  }
+  &__list li {
+    border-radius: 50%;
+  }
+  &__list li:not(:last-child) {
+    margin-right: 10px;
+  }
+  & .footer-social__item {
     background-color: rgba(255, 255, 255, 0.1);
   }
   & h3 {
@@ -13,6 +23,25 @@
 
     color: var(--body-background-color);
     margin-bottom: 20px;
+  }
+  &__item__link {
+    @extend %vertical-align;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    fill: #afb1b8;
+    background-color: transparent;
+
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      fill: var(--body-background-color);
+    }
   }
 }
 
