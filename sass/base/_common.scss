@@ -31,7 +31,7 @@ img {
 }
 body {
   @include font(14px, 400, 24px);
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font);
   letter-spacing: 0.03em;
   color: var(--text-color);
 }

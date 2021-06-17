@@ -15,20 +15,19 @@
   background-position: center center;
   background-size: 50% 50%;
   cursor: pointer;
-
   transition-property: border-color, background-image, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* для элемента <label> связанного с .custom-checkbox */
-  & + label {
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
-  }
   /* стили для custom-checkbox: находящегося в :focus и не находящегося в состоянии :checked */
-  &:focus:not(:checked) + label::before {
-    border-color: var(--accent-color);
-  }
+}
+.custom-checkbox + label::before + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox + label::before:focus:not(:checked) + label::before {
+  border-color: var(--accent-color);
 }
 
 /* стили для custom-checkbox: находящегося в состоянии :checked */
